@@ -1,0 +1,196 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.section-center{
+  background-color: #F1f5f8; 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*This helps avoid the list from overlapping*/
+.entire-body{  
+  padding-top: 40px;
+  padding-bottom: 40px;  
+}
+
+.grocery-form{
+  margin-bottom: 30px;
+}
+
+.grocery-bud{
+  background-color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.09);
+  /*right bottom blur rgba(red green blue opacity*/
+  border-radius: 9px;
+  transition: 0.5s ease;
+  
+}
+
+.grocery-bud:hover{
+  box-shadow: 0px 0px 12px rgba(0,0,0,0.19);
+}
+
+.alert{
+  font-family: Roboto;
+  font-size: 11px;
+  letter-spacing: 6px;
+  background-color: rgba(165, 233, 165, 0.425);
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 3px;  
+  visibility: hidden;
+}
+
+.alert-danger{
+  color: #721c24;
+  background-color: #f8d7da;
+  visibility: visible;
+}
+
+.alert-success{
+  color: #155724;  
+  background-color: #d4edda;
+  visibility: visible;
+}
+
+/*Showing the Alert*/
+
+.grocery-form h3{
+  color: rgb(6, 50, 81);
+  font-family: Roboto;
+  font-size: 28px;
+  letter-spacing: 4px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 23px;
+  margin-top: 10px;
+}
+
+#grocery{
+  background-color: rgb(241, 245, 248);
+  border: none;
+  font-family: Arial;
+  font-size: 16px;
+  padding: 4px 4px 4px 16px;
+  color: rgb(97, 125, 152);
+  width: 416px;
+  height: 22px;
+  border-radius: 0px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;  
+}
+
+.submit-btn{
+  background-color: rgba(113, 203, 238, 0.685);
+  border: none;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 8px;
+  padding-bottom: 7px;  
+  margin-left: -5px;  
+  font-family: Arial;
+  font-size: 13.6px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px; 
+  transition: 0.5s ease; 
+}
+
+.submit-btn:hover{
+  background-color: rgb(73, 166, 233);
+  color: white;
+}
+
+/*Grocery Container*/
+
+
+
+.grocery-item p{
+  font-size: 16px;
+  font-family: Open Sans;
+  letter-spacing: 2px;
+  line-height: 24px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  
+}
+
+.edit-btn{
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  color: rgba(91, 214, 91, 0.678);
+  font-size: 12px;
+  cursor: pointer;
+  padding-right: 8px;
+  transition: 0.5s ease;
+}
+
+.edit-btn:hover{
+  color: rgb(91, 214, 91);
+}
+
+.delete-btn{
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  font-size: 12px;
+  color: rgba(243, 67, 67, 0.822);
+  cursor: pointer;
+  padding-right: 20px;
+  transition: 0.5s ease;
+}
+
+.delete-btn:hover{
+  color: rgb(243, 67, 67);
+}
+
+.grocery-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.4s ease;
+  margin-top: 2px;
+  border-radius: 8px;
+}
+
+.grocery-item:hover{
+  background-color: rgb(241, 245, 248);
+  
+}
+
+.clear-btn{
+  background-color: white;
+  border: none;
+  color: rgba(209, 73, 73, 0.842);
+  font-family: Arial;
+  font-size: 13.6px;
+  letter-spacing: 4px;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: 0.6s ease;
+}
+
+.clear-btn:hover{
+  color:  rgba(189, 50, 50, 0.993);
+}
+
+/*Hidding the grocery Container*/
+.grocery-container{
+  visibility: hidden;
+}
+
+/*Showing the grocery Container*/
+.show-container{
+  visibility: visible;
+}
+
